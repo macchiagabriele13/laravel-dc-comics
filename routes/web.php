@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/about', [PageController::class, 'description'])->name('description');
 
-    return view('home');
-})->name('home');
 
-Route::get('/description', function () {
+
+/* Route::get('/description', function () {
 
     $data = [
         'thumb' => config('comics.comics'),
     ];
     return view('description', $data);
-})->name('description');
+})->name('description'); */
