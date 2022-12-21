@@ -7,6 +7,7 @@
 
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link active {{ Route::currentRouteName()=== 'home' ? 'active' : ''}}" href="{{route('home')}}" aria-current="page">Home Page</span></a>
+                <a class="nav-item nav-link active {{ Route::currentRouteName()=== 'comics.index' ? 'active' : ''}}" href="{{route('comics.index')}}" aria-current="page">admin Comics</span></a>
                 <a class="nav-item nav-link {{ Route::currentRouteName()=== 'description' ? 'active' : ''}}" href="{{route('description')}}">Description</a>
             </div>
 

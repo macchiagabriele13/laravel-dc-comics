@@ -11,11 +11,12 @@ class ComicsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
     public function index()
     {
         $comics = Comics::all();
+        return view('admin.comics.index');
     }
 
     /**
