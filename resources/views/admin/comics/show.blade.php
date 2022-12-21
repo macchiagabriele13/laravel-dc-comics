@@ -12,7 +12,7 @@
             <p>{{$comics->description}}</p>
             <div class="meta">
                 <div class="series">
-                    Cooking time: {{$comics->series}}
+                    Series: {{$comics->series}}
                 </div>
             </div>
 

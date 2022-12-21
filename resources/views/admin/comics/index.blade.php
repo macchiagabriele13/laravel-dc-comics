@@ -7,7 +7,7 @@
         <div class="heading d-flex justify-content-between">
             <h2>Comics</h2>
             <div>
-                <a href="{{route('comics.create')}}" class="btn btn-primary">Add Pasta</a>
+                <a href="{{route('comics.create')}}" class="btn btn-primary">Add Comics</a>
             </div>
         </div>
 

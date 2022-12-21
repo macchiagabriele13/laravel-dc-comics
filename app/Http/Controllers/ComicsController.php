@@ -45,6 +45,7 @@ class ComicsController extends Controller
         $comics->series = $request['series'];
         $comics->sale_date = $request['sale_date'];
         $comics->type = $request['type'];
+        $comics->save();
 
         return to_route('comics.index');
     }
@@ -57,6 +58,7 @@ class ComicsController extends Controller
      */
     public function show(Comics $comics)
     {
+        return view('admin.comics.show', compact('comics'));
     }
 
     /**
