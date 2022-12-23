@@ -6,13 +6,13 @@
 
 <div class="container py-5">
     <div class="d-flex gap-4">
-        <img src="{{$comics->thumb}}" alt="{{$comics->title}}">
+        <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
         <div class="details">
-            <h1>{{$comics->title}}</h1>
-            <p>{{$comics->description}}</p>
+            <h1>{{$comic->title}}</h1>
+            <p>{{$comic->description}}</p>
             <div class="meta">
                 <div class="series">
-                    Series: {{$comics->series}}
+                    Series: {{$comic->series}}
                 </div>
             </div>
 

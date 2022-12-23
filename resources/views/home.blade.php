@@ -12,10 +12,6 @@
             @foreach(Config::get('comics.comics') as $comic)
             <div class="col-2">
                 @if($comic === Config::get('comics.comics')[0])
-                <a href="{{route('description')}}">
-                    <img src="{{$comic['thumb']}}" alt="">
-                    <p>{{$comic['series']}}</p>
-                </a>
 
                 @else
                 <img src="{{$comic['thumb']}}" alt="title">
